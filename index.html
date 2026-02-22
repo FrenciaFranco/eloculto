@@ -106,7 +106,7 @@
       </a>
     </section>
 
-    <section id="galeria" class="gallery-section reveal">
+    <section id="galeria" class="gallery-section">
       <div class="section-head">
         <p class="eyebrow">Galeria completa</p>
         <h2>Todas las fotos disponibles del establecimiento</h2>
@@ -237,7 +237,9 @@
       const imagePath = encodeURI(`fotos/${name}`);
       image.src = imagePath;
       image.alt = `Foto del campo ${index + 1}`;
-      image.loading = "lazy";
+      image.loading = index < 12 ? "eager" : "lazy";
+      image.fetchPriority = index < 4 ? "high" : "auto";
+      image.decoding = "async";
       image.addEventListener("click", () => openLightbox(index));
 
       figure.appendChild(image);
@@ -273,7 +275,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { rootMargin: "220px 0px", threshold: 0.01 });
 
     document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
   </script>
