@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campo en venta | Tapenaga, Chaco</title>
-  <meta name="description" content="Campo de 2.500 hectareas en venta en el departamento Tapenaga, Chaco. Infraestructura instalada, 13 potreros, corrales con manga y casa principal.">
+  <meta id="metaDescription" name="description" content="Campo de 2.500 hectareas en venta en el departamento Tapenaga, Chaco. Infraestructura instalada, 13 potreros, corrales con manga y casa principal.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,113 +15,126 @@
   <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
 
   <header class="site-header reveal">
-    <p class="brand">Establecimiento Rural</p>
-    <a class="btn btn-outline" href="https://wa.me/5493624243362?text=Hola%20Mario%2C%20quiero%20coordinar%20una%20visita%20al%20campo%20en%20Tapenaga." target="_blank" rel="noopener noreferrer">Coordinar por WhatsApp</a>
+    <p class="brand" data-i18n="brand">Establecimiento Rural</p>
+    <div class="header-actions">
+      <label class="language-switch" for="languageSelect">
+        <span data-i18n="languageLabel">Idioma</span>
+        <select id="languageSelect" aria-label="Seleccionar idioma" data-i18n-attr="aria-label:languageSelectAria">
+          <option value="es">Espanol</option>
+          <option value="en">English</option>
+          <option value="it">Italiano</option>
+          <option value="ca">Catala</option>
+          <option value="fr">Francais</option>
+          <option value="pt">Portugues</option>
+        </select>
+      </label>
+      <a class="btn btn-outline" data-i18n="headerWhatsapp" href="https://wa.me/5493624243362?text=Hola%20Mario%2C%20quiero%20coordinar%20una%20visita%20al%20campo%20en%20Tapenaga." target="_blank" rel="noopener noreferrer">Coordinar por WhatsApp</a>
+    </div>
   </header>
 
   <main>
     <section class="hero reveal">
       <div class="hero-copy">
-        <p class="property-name">Campo El Oculto</p>
-        <p class="sale-tag">Campo en venta</p>
-        <p class="eyebrow">Departamento Tapenaga, sur del Chaco</p>
-        <h1>Venta de 2.500 hectareas listas para producir</h1>
-        <p class="lead">Campo en venta con infraestructura ganadera, acceso estrategico y mejoras existentes para comenzar a trabajar desde el primer dia.</p>
+        <p class="property-name" data-i18n="propertyName">Campo El Oculto</p>
+        <p class="sale-tag" data-i18n="saleTag">Campo en venta</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">Departamento Tapenaga, sur del Chaco</p>
+        <h1 data-i18n="heroTitle">Venta de 2.500 hectareas listas para producir</h1>
+        <p class="lead" data-i18n="heroLead">Campo en venta con infraestructura ganadera, acceso estrategico y mejoras existentes para comenzar a trabajar desde el primer dia.</p>
         <div class="hero-actions">
-          <a class="btn" href="#galeria">Ver fotos</a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/d/u/0/edit?mid=1vPNSesRvyugws0fm4Eb3oDkICb8_a3A&usp=sharing" target="_blank" rel="noopener noreferrer">Ver mapa</a>
+          <a class="btn" data-i18n="viewPhotos" href="#galeria">Ver fotos</a>
+          <a class="btn btn-ghost" data-i18n="viewMap" href="https://www.google.com/maps/d/u/0/edit?mid=1vPNSesRvyugws0fm4Eb3oDkICb8_a3A&usp=sharing" target="_blank" rel="noopener noreferrer">Ver mapa</a>
         </div>
       </div>
       <div class="hero-image-wrap">
-        <img class="hero-image" src="fotos/WhatsApp%20Image%202026-02-19%20at%2020.54.12%20(1).jpeg" alt="Vista principal del campo en venta">
+        <img class="hero-image" data-i18n-attr="alt:heroImageAlt" src="fotos/WhatsApp%20Image%202026-02-19%20at%2020.54.12%20(1).jpeg" alt="Vista principal del campo en venta">
       </div>
     </section>
 
     <section class="stats reveal">
       <article>
-        <p class="label">Superficie</p>
+        <p class="label" data-i18n="statSurface">Superficie</p>
         <p class="value">2.500 ha</p>
       </article>
       <article>
-        <p class="label">Potreros</p>
-        <p class="value">13 en total</p>
+        <p class="label" data-i18n="statPaddocks">Potreros</p>
+        <p class="value" data-i18n="statPaddocksValue">13 en total</p>
       </article>
       <article>
-        <p class="label">Distancia a La Sabana</p>
+        <p class="label" data-i18n="statDistance">Distancia a La Sabana</p>
         <p class="value">7,77 km</p>
       </article>
       <article>
-        <p class="label">Desde Resistencia</p>
+        <p class="label" data-i18n="statFromResistencia">Desde Resistencia</p>
         <p class="value">122 km</p>
       </article>
     </section>
 
     <section class="content-grid reveal" id="detalles">
       <article class="card">
-        <h2>Resumen del inmueble</h2>
+        <h2 data-i18n="summaryTitle">Resumen del inmueble</h2>
         <ul>
-          <li>Ubicado al sur del Chaco, en el departamento Tapenaga.</li>
-          <li>Poblado mas cercano: La Sabana (Chaco), a 7,77 km de la Ruta 7 hacia el este.</li>
-          <li>Cabecera departamental: Charadai, a 21 km en linea recta.</li>
-          <li>Luz electrica disponible.</li>
-          <li>Cuatro represas: 3 con tanque en uso y 1 sin tanque.</li>
+          <li data-i18n="summary1">Ubicado al sur del Chaco, en el departamento Tapenaga.</li>
+          <li data-i18n="summary2">Poblado mas cercano: La Sabana (Chaco), a 7,77 km de la Ruta 7 hacia el este.</li>
+          <li data-i18n="summary3">Cabecera departamental: Charadai, a 21 km en linea recta.</li>
+          <li data-i18n="summary4">Luz electrica disponible.</li>
+          <li data-i18n="summary5">Cuatro represas: 3 con tanque en uso y 1 sin tanque.</li>
         </ul>
       </article>
 
       <article class="card">
-        <h2>Infraestructura y mejoras</h2>
+        <h2 data-i18n="infraTitle">Infraestructura y mejoras</h2>
         <ul>
-          <li>13 potreros en total.</li>
-          <li>8 potreros con division de 4/5 hilos.</li>
-          <li>5 potreros con electrico.</li>
-          <li>Corrales con manga instalados.</li>
-          <li>Balanza disponible (requiere techar y reparar).</li>
-          <li>No cuenta con bano para ganado.</li>
+          <li data-i18n="infra1">13 potreros en total.</li>
+          <li data-i18n="infra2">8 potreros con division de 4/5 hilos.</li>
+          <li data-i18n="infra3">5 potreros con electrico.</li>
+          <li data-i18n="infra4">Corrales con manga instalados.</li>
+          <li data-i18n="infra5">Balanza disponible (requiere techar y reparar).</li>
+          <li data-i18n="infra6">No cuenta con bano para ganado.</li>
         </ul>
       </article>
 
       <article class="card">
-        <h2>Casa principal</h2>
+        <h2 data-i18n="houseTitle">Casa principal</h2>
         <ul>
-          <li>4 habitaciones.</li>
-          <li>1 bano interior y 1 bano exterior.</li>
-          <li>2 cocinas comedor.</li>
+          <li data-i18n="house1">4 habitaciones.</li>
+          <li data-i18n="house2">1 bano interior y 1 bano exterior.</li>
+          <li data-i18n="house3">2 cocinas comedor.</li>
         </ul>
       </article>
 
       <article class="card" id="ubicacion">
-        <h2>Ubicacion y referencias</h2>
-        <p>El establecimiento combina escala productiva y cercania a centros de referencia de la zona.</p>
-        <p>Este enlace corresponde al mapa actualizado.</p>
+        <h2 data-i18n="locationTitle">Ubicacion y referencias</h2>
+        <p data-i18n="locationText1">El establecimiento combina escala productiva y cercania a centros de referencia de la zona.</p>
+        <p data-i18n="locationText2">Este enlace corresponde al mapa actualizado.</p>
         <div class="location-links">
-          <a href="https://www.google.com/maps/d/u/0/edit?mid=1vPNSesRvyugws0fm4Eb3oDkICb8_a3A&usp=sharing" target="_blank" rel="noopener noreferrer">Abrir mapa en Google Maps</a>
-          <a href="https://earth.google.com/earth/d/1vTj15rfQHVgW3lzaR3LzYUubRnZKo1aq?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir vista en Google Earth</a>
+          <a data-i18n="openGoogleMaps" href="https://www.google.com/maps/d/u/0/edit?mid=1vPNSesRvyugws0fm4Eb3oDkICb8_a3A&usp=sharing" target="_blank" rel="noopener noreferrer">Abrir mapa en Google Maps</a>
+          <a data-i18n="openGoogleEarth" href="https://earth.google.com/earth/d/1vTj15rfQHVgW3lzaR3LzYUubRnZKo1aq?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir vista en Google Earth</a>
         </div>
       </article>
     </section>
 
     <section class="mapa reveal">
       <a href="https://www.google.com/maps/d/u/0/edit?mid=1vPNSesRvyugws0fm4Eb3oDkICb8_a3A&usp=sharing" target="_blank" rel="noopener noreferrer">
-        <img src="mapa.png" alt="Mapa de ubicacion y distancias del campo">
+        <img data-i18n-attr="alt:mapAlt" src="mapa.png" alt="Mapa de ubicacion y distancias del campo">
       </a>
     </section>
 
     <section id="galeria" class="gallery-section">
       <div class="section-head">
-        <p class="eyebrow">Galeria completa</p>
-        <h2>Todas las fotos disponibles del establecimiento</h2>
+        <p class="eyebrow" data-i18n="galleryEyebrow">Galeria completa</p>
+        <h2 data-i18n="galleryTitle">Todas las fotos disponibles del establecimiento</h2>
       </div>
       <div id="gallery" class="gallery" aria-live="polite"></div>
     </section>
 
     <section class="contact reveal" id="contacto">
-      <h2>Interesado en avanzar con una visita?</h2>
-      <p>La informacion tecnica y visual ya esta disponible. Para coordinar visita o recibir condiciones comerciales, contacta por WhatsApp a Mario.</p>
-      <p class="contact-phone">Mario: +54 9 362 4243362</p>
-      <p class="contact-english">If you want to consult in english contact Franco +34 644 583808</p>
+      <h2 data-i18n="contactTitle">Interesado en avanzar con una visita?</h2>
+      <p data-i18n="contactText">La informacion tecnica y visual ya esta disponible. Para coordinar visita o recibir condiciones comerciales, contacta por WhatsApp a Mario.</p>
+      <p class="contact-phone" data-i18n="contactPhone">Mario: +54 9 362 4243362</p>
+      <p class="contact-english" data-i18n="contactEnglish">If you want to consult in english contact Franco +34 644 583808</p>
       <div class="contact-actions">
-        <a class="btn" href="https://wa.me/5493624243362?text=Hola%20Mario%2C%20quiero%20coordinar%20una%20visita%20al%20campo%20en%20Tapenaga." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/d/u/0/edit?mid=1vPNSesRvyugws0fm4Eb3oDkICb8_a3A&usp=sharing" target="_blank" rel="noopener noreferrer">Abrir mapa</a>
+        <a class="btn" data-i18n="writeWhatsapp" href="https://wa.me/5493624243362?text=Hola%20Mario%2C%20quiero%20coordinar%20una%20visita%20al%20campo%20en%20Tapenaga." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+        <a class="btn btn-ghost" data-i18n="openMapShort" href="https://www.google.com/maps/d/u/0/edit?mid=1vPNSesRvyugws0fm4Eb3oDkICb8_a3A&usp=sharing" target="_blank" rel="noopener noreferrer">Abrir mapa</a>
       </div>
     </section>
   </main>
@@ -132,18 +145,439 @@
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Contactar por WhatsApp"
+    data-i18n="whatsappFloat"
+    data-i18n-attr="aria-label:whatsappAria"
   >
     WhatsApp Mario
   </a>
 
   <div class="lightbox" id="lightbox" hidden aria-hidden="true">
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&lt;</button>
-    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">Cerrar</button>
-    <img id="lightboxImage" src="" alt="Imagen ampliada del campo">
-    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto siguiente">&gt;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior" data-i18n-attr="aria-label:lightboxPrevAria">&lt;</button>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen" data-i18n="lightboxClose" data-i18n-attr="aria-label:lightboxCloseAria">Cerrar</button>
+    <img id="lightboxImage" src="" alt="Imagen ampliada del campo" data-i18n-attr="alt:lightboxImageAlt">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto siguiente" data-i18n-attr="aria-label:lightboxNextAria">&gt;</button>
   </div>
 
   <script>
+    const supportedLanguages = ["es", "en", "it", "ca", "fr", "pt"];
+    const translations = {
+      es: {
+        metaTitle: "Campo en venta | Tapenaga, Chaco",
+        metaDescription: "Campo de 2.500 hectareas en venta en el departamento Tapenaga, Chaco. Infraestructura instalada, 13 potreros, corrales con manga y casa principal.",
+        brand: "Establecimiento Rural",
+        languageLabel: "Idioma",
+        languageSelectAria: "Seleccionar idioma",
+        headerWhatsapp: "Coordinar por WhatsApp",
+        propertyName: "Campo El Oculto",
+        saleTag: "Campo en venta",
+        heroEyebrow: "Departamento Tapenaga, sur del Chaco",
+        heroTitle: "Venta de 2.500 hectareas listas para producir",
+        heroLead: "Campo en venta con infraestructura ganadera, acceso estrategico y mejoras existentes para comenzar a trabajar desde el primer dia.",
+        viewPhotos: "Ver fotos",
+        viewMap: "Ver mapa",
+        heroImageAlt: "Vista principal del campo en venta",
+        statSurface: "Superficie",
+        statPaddocks: "Potreros",
+        statPaddocksValue: "13 en total",
+        statDistance: "Distancia a La Sabana",
+        statFromResistencia: "Desde Resistencia",
+        summaryTitle: "Resumen del inmueble",
+        summary1: "Ubicado al sur del Chaco, en el departamento Tapenaga.",
+        summary2: "Poblado mas cercano: La Sabana (Chaco), a 7,77 km de la Ruta 7 hacia el este.",
+        summary3: "Cabecera departamental: Charadai, a 21 km en linea recta.",
+        summary4: "Luz electrica disponible.",
+        summary5: "Cuatro represas: 3 con tanque en uso y 1 sin tanque.",
+        infraTitle: "Infraestructura y mejoras",
+        infra1: "13 potreros en total.",
+        infra2: "8 potreros con division de 4/5 hilos.",
+        infra3: "5 potreros con electrico.",
+        infra4: "Corrales con manga instalados.",
+        infra5: "Balanza disponible (requiere techar y reparar).",
+        infra6: "No cuenta con bano para ganado.",
+        houseTitle: "Casa principal",
+        house1: "4 habitaciones.",
+        house2: "1 bano interior y 1 bano exterior.",
+        house3: "2 cocinas comedor.",
+        locationTitle: "Ubicacion y referencias",
+        locationText1: "El establecimiento combina escala productiva y cercania a centros de referencia de la zona.",
+        locationText2: "Este enlace corresponde al mapa actualizado.",
+        openGoogleMaps: "Abrir mapa en Google Maps",
+        openGoogleEarth: "Abrir vista en Google Earth",
+        mapAlt: "Mapa de ubicacion y distancias del campo",
+        galleryEyebrow: "Galeria completa",
+        galleryTitle: "Todas las fotos disponibles del establecimiento",
+        contactTitle: "Interesado en avanzar con una visita?",
+        contactText: "La informacion tecnica y visual ya esta disponible. Para coordinar visita o recibir condiciones comerciales, contacta por WhatsApp a Mario.",
+        contactPhone: "Mario: +54 9 362 4243362",
+        contactEnglish: "Si prefieres consultar en ingles contacta a Franco +34 644 583808",
+        writeWhatsapp: "Escribir por WhatsApp",
+        openMapShort: "Abrir mapa",
+        whatsappFloat: "WhatsApp Mario",
+        whatsappAria: "Contactar por WhatsApp",
+        lightboxPrevAria: "Foto anterior",
+        lightboxClose: "Cerrar",
+        lightboxCloseAria: "Cerrar imagen",
+        lightboxImageAlt: "Imagen ampliada del campo",
+        lightboxNextAria: "Foto siguiente",
+        photoAlt: "Foto del campo {index}"
+      },
+      en: {
+        metaTitle: "Farm for sale | Tapenaga, Chaco",
+        metaDescription: "2,500-hectare farm for sale in Tapenaga, Chaco. Existing infrastructure, 13 paddocks, cattle pens with chute, and main house.",
+        brand: "Rural Property",
+        languageLabel: "Language",
+        languageSelectAria: "Select language",
+        headerWhatsapp: "Schedule on WhatsApp",
+        propertyName: "El Oculto Farm",
+        saleTag: "Farm for sale",
+        heroEyebrow: "Tapenaga Department, southern Chaco",
+        heroTitle: "2,500 hectares ready for production",
+        heroLead: "Farm for sale with cattle infrastructure, strategic access, and existing improvements to start operating from day one.",
+        viewPhotos: "View photos",
+        viewMap: "View map",
+        heroImageAlt: "Main view of the farm for sale",
+        statSurface: "Area",
+        statPaddocks: "Paddocks",
+        statPaddocksValue: "13 total",
+        statDistance: "Distance to La Sabana",
+        statFromResistencia: "From Resistencia",
+        summaryTitle: "Property summary",
+        summary1: "Located in southern Chaco, in Tapenaga Department.",
+        summary2: "Nearest town: La Sabana (Chaco), 7.77 km east from Route 7.",
+        summary3: "Department capital: Charadai, 21 km in a straight line.",
+        summary4: "Electric power available.",
+        summary5: "Four reservoirs: 3 with active tanks and 1 without a tank.",
+        infraTitle: "Infrastructure and improvements",
+        infra1: "13 paddocks in total.",
+        infra2: "8 paddocks with 4/5-wire fencing.",
+        infra3: "5 electric-fenced paddocks.",
+        infra4: "Cattle pens with chute installed.",
+        infra5: "Scale available (needs roofing and repairs).",
+        infra6: "No cattle dip available.",
+        houseTitle: "Main house",
+        house1: "4 bedrooms.",
+        house2: "1 indoor bathroom and 1 outdoor bathroom.",
+        house3: "2 kitchen-dining areas.",
+        locationTitle: "Location and references",
+        locationText1: "The property combines productive scale and proximity to key local points.",
+        locationText2: "This link opens the updated map.",
+        openGoogleMaps: "Open map in Google Maps",
+        openGoogleEarth: "Open view in Google Earth",
+        mapAlt: "Map with farm location and distances",
+        galleryEyebrow: "Full gallery",
+        galleryTitle: "All available photos of the property",
+        contactTitle: "Interested in scheduling a visit?",
+        contactText: "Technical and visual information is already available. To schedule a visit or receive commercial terms, contact Mario on WhatsApp.",
+        contactPhone: "Mario: +54 9 362 4243362",
+        contactEnglish: "For consultations in English contact Franco +34 644 583808",
+        writeWhatsapp: "Write on WhatsApp",
+        openMapShort: "Open map",
+        whatsappFloat: "WhatsApp Mario",
+        whatsappAria: "Contact on WhatsApp",
+        lightboxPrevAria: "Previous photo",
+        lightboxClose: "Close",
+        lightboxCloseAria: "Close image",
+        lightboxImageAlt: "Enlarged farm image",
+        lightboxNextAria: "Next photo",
+        photoAlt: "Farm photo {index}"
+      },
+      it: {
+        metaTitle: "Campo in vendita | Tapenaga, Chaco",
+        metaDescription: "Campo di 2.500 ettari in vendita a Tapenaga, Chaco. Infrastruttura installata, 13 recinti, corrali con manga e casa principale.",
+        brand: "Proprieta Rurale",
+        languageLabel: "Lingua",
+        languageSelectAria: "Seleziona lingua",
+        headerWhatsapp: "Organizza via WhatsApp",
+        propertyName: "Campo El Oculto",
+        saleTag: "Campo in vendita",
+        heroEyebrow: "Dipartimento Tapenaga, sud del Chaco",
+        heroTitle: "2.500 ettari pronti a produrre",
+        heroLead: "Campo in vendita con infrastruttura zootecnica, accesso strategico e miglioramenti esistenti per iniziare dal primo giorno.",
+        viewPhotos: "Vedi foto",
+        viewMap: "Vedi mappa",
+        heroImageAlt: "Vista principale del campo in vendita",
+        statSurface: "Superficie",
+        statPaddocks: "Recinti",
+        statPaddocksValue: "13 totali",
+        statDistance: "Distanza da La Sabana",
+        statFromResistencia: "Da Resistencia",
+        summaryTitle: "Sintesi della proprieta",
+        summary1: "Situato nel sud del Chaco, nel dipartimento Tapenaga.",
+        summary2: "Centro abitato piu vicino: La Sabana (Chaco), a 7,77 km dalla Ruta 7 verso est.",
+        summary3: "Capoluogo dipartimentale: Charadai, a 21 km in linea d'aria.",
+        summary4: "Energia elettrica disponibile.",
+        summary5: "Quattro bacini: 3 con serbatoio in uso e 1 senza serbatoio.",
+        infraTitle: "Infrastruttura e migliorie",
+        infra1: "13 recinti totali.",
+        infra2: "8 recinti con divisione a 4/5 fili.",
+        infra3: "5 recinti elettrificati.",
+        infra4: "Corrali con manga installati.",
+        infra5: "Bilancia disponibile (da coprire e riparare).",
+        infra6: "Nessun bagno per bestiame.",
+        houseTitle: "Casa principale",
+        house1: "4 camere.",
+        house2: "1 bagno interno e 1 bagno esterno.",
+        house3: "2 cucine-sala da pranzo.",
+        locationTitle: "Posizione e riferimenti",
+        locationText1: "La proprieta combina scala produttiva e vicinanza ai punti di riferimento locali.",
+        locationText2: "Questo link apre la mappa aggiornata.",
+        openGoogleMaps: "Apri mappa in Google Maps",
+        openGoogleEarth: "Apri vista in Google Earth",
+        mapAlt: "Mappa con posizione e distanze del campo",
+        galleryEyebrow: "Galleria completa",
+        galleryTitle: "Tutte le foto disponibili della proprieta",
+        contactTitle: "Interessato a programmare una visita?",
+        contactText: "Le informazioni tecniche e visive sono gia disponibili. Per organizzare una visita o ricevere condizioni commerciali, contatta Mario su WhatsApp.",
+        contactPhone: "Mario: +54 9 362 4243362",
+        contactEnglish: "Per consulenze in inglese contatta Franco +34 644 583808",
+        writeWhatsapp: "Scrivi su WhatsApp",
+        openMapShort: "Apri mappa",
+        whatsappFloat: "WhatsApp Mario",
+        whatsappAria: "Contatta su WhatsApp",
+        lightboxPrevAria: "Foto precedente",
+        lightboxClose: "Chiudi",
+        lightboxCloseAria: "Chiudi immagine",
+        lightboxImageAlt: "Immagine ingrandita del campo",
+        lightboxNextAria: "Foto successiva",
+        photoAlt: "Foto del campo {index}"
+      },
+      ca: {
+        metaTitle: "Finca en venda | Tapenaga, Chaco",
+        metaDescription: "Finca de 2.500 hectares en venda a Tapenaga, Chaco. Infraestructura installada, 13 tancats, corrals amb manga i casa principal.",
+        brand: "Propietat Rural",
+        languageLabel: "Idioma",
+        languageSelectAria: "Seleccionar idioma",
+        headerWhatsapp: "Coordinar per WhatsApp",
+        propertyName: "Finca El Oculto",
+        saleTag: "Finca en venda",
+        heroEyebrow: "Departament Tapenaga, sud del Chaco",
+        heroTitle: "Venda de 2.500 hectares a punt per produir",
+        heroLead: "Finca en venda amb infraestructura ramadera, acces estrategic i millores existents per comencar a treballar des del primer dia.",
+        viewPhotos: "Veure fotos",
+        viewMap: "Veure mapa",
+        heroImageAlt: "Vista principal de la finca en venda",
+        statSurface: "Superficie",
+        statPaddocks: "Tancats",
+        statPaddocksValue: "13 en total",
+        statDistance: "Distancia a La Sabana",
+        statFromResistencia: "Des de Resistencia",
+        summaryTitle: "Resum de l'immoble",
+        summary1: "Situat al sud del Chaco, al departament Tapenaga.",
+        summary2: "Poble mes proper: La Sabana (Chaco), a 7,77 km de la Ruta 7 cap a l'est.",
+        summary3: "Capital departamental: Charadai, a 21 km en linia recta.",
+        summary4: "Llum electrica disponible.",
+        summary5: "Quatre represas: 3 amb tanc en us i 1 sense tanc.",
+        infraTitle: "Infraestructura i millores",
+        infra1: "13 tancats en total.",
+        infra2: "8 tancats amb divisio de 4/5 fils.",
+        infra3: "5 tancats electrics.",
+        infra4: "Corrals amb manga installats.",
+        infra5: "Bascula disponible (cal cobrir i reparar).",
+        infra6: "No te bany per al bestiar.",
+        houseTitle: "Casa principal",
+        house1: "4 habitacions.",
+        house2: "1 bany interior i 1 bany exterior.",
+        house3: "2 cuines menjador.",
+        locationTitle: "Ubicacio i referencies",
+        locationText1: "L'establiment combina escala productiva i proximitat a centres de referencia de la zona.",
+        locationText2: "Aquest enllac correspon al mapa actualitzat.",
+        openGoogleMaps: "Obrir mapa a Google Maps",
+        openGoogleEarth: "Obrir vista a Google Earth",
+        mapAlt: "Mapa d'ubicacio i distancies de la finca",
+        galleryEyebrow: "Galeria completa",
+        galleryTitle: "Totes les fotos disponibles de l'establiment",
+        contactTitle: "Interessat a avancar amb una visita?",
+        contactText: "La informacio tecnica i visual ja esta disponible. Per coordinar visita o rebre condicions comercials, contacta per WhatsApp amb Mario.",
+        contactPhone: "Mario: +54 9 362 4243362",
+        contactEnglish: "Si prefereixes consultar en angles contacta amb Franco +34 644 583808",
+        writeWhatsapp: "Escriure per WhatsApp",
+        openMapShort: "Obrir mapa",
+        whatsappFloat: "WhatsApp Mario",
+        whatsappAria: "Contactar per WhatsApp",
+        lightboxPrevAria: "Foto anterior",
+        lightboxClose: "Tancar",
+        lightboxCloseAria: "Tancar imatge",
+        lightboxImageAlt: "Imatge ampliada de la finca",
+        lightboxNextAria: "Foto seguent",
+        photoAlt: "Foto de la finca {index}"
+      },
+      fr: {
+        metaTitle: "Propriete a vendre | Tapenaga, Chaco",
+        metaDescription: "Propriete de 2 500 hectares a vendre a Tapenaga, Chaco. Infrastructure installee, 13 paddocks, corrals avec couloir de contention et maison principale.",
+        brand: "Propriete Rurale",
+        languageLabel: "Langue",
+        languageSelectAria: "Choisir la langue",
+        headerWhatsapp: "Organiser via WhatsApp",
+        propertyName: "Domaine El Oculto",
+        saleTag: "Propriete a vendre",
+        heroEyebrow: "Departement Tapenaga, sud du Chaco",
+        heroTitle: "2 500 hectares prets a produire",
+        heroLead: "Propriete a vendre avec infrastructure d'elevage, acces strategique et ameliorations existantes pour commencer des le premier jour.",
+        viewPhotos: "Voir photos",
+        viewMap: "Voir carte",
+        heroImageAlt: "Vue principale de la propriete a vendre",
+        statSurface: "Superficie",
+        statPaddocks: "Paddocks",
+        statPaddocksValue: "13 au total",
+        statDistance: "Distance jusqu'a La Sabana",
+        statFromResistencia: "Depuis Resistencia",
+        summaryTitle: "Resume du bien",
+        summary1: "Situe au sud du Chaco, dans le departement Tapenaga.",
+        summary2: "Localite la plus proche: La Sabana (Chaco), a 7,77 km de la Route 7 vers l'est.",
+        summary3: "Chef-lieu departemental: Charadai, a 21 km a vol d'oiseau.",
+        summary4: "Electricite disponible.",
+        summary5: "Quatre retenues d'eau: 3 avec reservoir en service et 1 sans reservoir.",
+        infraTitle: "Infrastructure et ameliorations",
+        infra1: "13 paddocks au total.",
+        infra2: "8 paddocks avec cloture 4/5 fils.",
+        infra3: "5 paddocks electriques.",
+        infra4: "Corrals avec couloir de contention installes.",
+        infra5: "Balance disponible (toiture et reparations a faire).",
+        infra6: "Pas de bain de betail.",
+        houseTitle: "Maison principale",
+        house1: "4 chambres.",
+        house2: "1 salle de bain interieure et 1 exterieure.",
+        house3: "2 cuisines-salles a manger.",
+        locationTitle: "Localisation et references",
+        locationText1: "La propriete combine echelle productive et proximite des points de reference de la zone.",
+        locationText2: "Ce lien ouvre la carte mise a jour.",
+        openGoogleMaps: "Ouvrir la carte dans Google Maps",
+        openGoogleEarth: "Ouvrir la vue dans Google Earth",
+        mapAlt: "Carte de localisation et distances de la propriete",
+        galleryEyebrow: "Galerie complete",
+        galleryTitle: "Toutes les photos disponibles de la propriete",
+        contactTitle: "Interesse par une visite?",
+        contactText: "Les informations techniques et visuelles sont deja disponibles. Pour organiser une visite ou recevoir les conditions commerciales, contactez Mario via WhatsApp.",
+        contactPhone: "Mario: +54 9 362 4243362",
+        contactEnglish: "Pour une consultation en anglais contactez Franco +34 644 583808",
+        writeWhatsapp: "Ecrire sur WhatsApp",
+        openMapShort: "Ouvrir carte",
+        whatsappFloat: "WhatsApp Mario",
+        whatsappAria: "Contacter sur WhatsApp",
+        lightboxPrevAria: "Photo precedente",
+        lightboxClose: "Fermer",
+        lightboxCloseAria: "Fermer image",
+        lightboxImageAlt: "Image agrandie de la propriete",
+        lightboxNextAria: "Photo suivante",
+        photoAlt: "Photo de la propriete {index}"
+      },
+      pt: {
+        metaTitle: "Fazenda a venda | Tapenaga, Chaco",
+        metaDescription: "Fazenda de 2.500 hectares a venda em Tapenaga, Chaco. Infraestrutura instalada, 13 potreiros, currais com manga e casa principal.",
+        brand: "Propriedade Rural",
+        languageLabel: "Idioma",
+        languageSelectAria: "Selecionar idioma",
+        headerWhatsapp: "Agendar por WhatsApp",
+        propertyName: "Fazenda El Oculto",
+        saleTag: "Fazenda a venda",
+        heroEyebrow: "Departamento Tapenaga, sul do Chaco",
+        heroTitle: "2.500 hectares prontos para produzir",
+        heroLead: "Fazenda a venda com infraestrutura pecuaria, acesso estrategico e melhorias existentes para comecar a operar desde o primeiro dia.",
+        viewPhotos: "Ver fotos",
+        viewMap: "Ver mapa",
+        heroImageAlt: "Vista principal da fazenda a venda",
+        statSurface: "Superficie",
+        statPaddocks: "Potreiros",
+        statPaddocksValue: "13 no total",
+        statDistance: "Distancia ate La Sabana",
+        statFromResistencia: "Desde Resistencia",
+        summaryTitle: "Resumo do imovel",
+        summary1: "Localizado ao sul de Chaco, no departamento Tapenaga.",
+        summary2: "Povoado mais proximo: La Sabana (Chaco), a 7,77 km da Ruta 7 para leste.",
+        summary3: "Sede departamental: Charadai, a 21 km em linha reta.",
+        summary4: "Energia eletrica disponivel.",
+        summary5: "Quatro represas: 3 com tanque em uso e 1 sem tanque.",
+        infraTitle: "Infraestrutura e melhorias",
+        infra1: "13 potreiros no total.",
+        infra2: "8 potreiros com divisao de 4/5 fios.",
+        infra3: "5 potreiros eletricos.",
+        infra4: "Currais com manga instalados.",
+        infra5: "Balanca disponivel (precisa cobrir e reparar).",
+        infra6: "Nao possui banheiro para gado.",
+        houseTitle: "Casa principal",
+        house1: "4 quartos.",
+        house2: "1 banheiro interno e 1 banheiro externo.",
+        house3: "2 cozinhas copa.",
+        locationTitle: "Localizacao e referencias",
+        locationText1: "A propriedade combina escala produtiva e proximidade com centros de referencia da regiao.",
+        locationText2: "Este link abre o mapa atualizado.",
+        openGoogleMaps: "Abrir mapa no Google Maps",
+        openGoogleEarth: "Abrir vista no Google Earth",
+        mapAlt: "Mapa de localizacao e distancias da fazenda",
+        galleryEyebrow: "Galeria completa",
+        galleryTitle: "Todas as fotos disponiveis da propriedade",
+        contactTitle: "Interessado em agendar uma visita?",
+        contactText: "As informacoes tecnicas e visuais ja estao disponiveis. Para agendar visita ou receber condicoes comerciais, fale com Mario no WhatsApp.",
+        contactPhone: "Mario: +54 9 362 4243362",
+        contactEnglish: "Para atendimento em ingles fale com Franco +34 644 583808",
+        writeWhatsapp: "Escrever por WhatsApp",
+        openMapShort: "Abrir mapa",
+        whatsappFloat: "WhatsApp Mario",
+        whatsappAria: "Contatar por WhatsApp",
+        lightboxPrevAria: "Foto anterior",
+        lightboxClose: "Fechar",
+        lightboxCloseAria: "Fechar imagem",
+        lightboxImageAlt: "Imagem ampliada da fazenda",
+        lightboxNextAria: "Foto seguinte",
+        photoAlt: "Foto da fazenda {index}"
+      }
+    };
+
+    const languageSelect = document.getElementById("languageSelect");
+    const metaDescription = document.getElementById("metaDescription");
+    const browserLanguage = navigator.language.slice(0, 2).toLowerCase();
+    const savedLanguage = localStorage.getItem("preferredLanguage");
+    const initialLanguage = supportedLanguages.includes(savedLanguage)
+      ? savedLanguage
+      : supportedLanguages.includes(browserLanguage)
+        ? browserLanguage
+        : "es";
+
+    let currentLanguage = initialLanguage;
+
+    const getText = (key) => {
+      const current = translations[currentLanguage] || translations.es;
+      return current[key] || translations.es[key] || "";
+    };
+
+    const formatText = (template, index) => template.replace("{index}", String(index));
+
+    const applyLanguage = (language) => {
+      currentLanguage = supportedLanguages.includes(language) ? language : "es";
+      const current = translations[currentLanguage];
+
+      document.documentElement.lang = currentLanguage;
+      document.title = current.metaTitle;
+      metaDescription.setAttribute("content", current.metaDescription);
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (current[key]) {
+          element.textContent = current[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+        const bindings = element.getAttribute("data-i18n-attr").split(";");
+        bindings.forEach((binding) => {
+          const [attributeName, key] = binding.split(":");
+          if (attributeName && key && current[key]) {
+            element.setAttribute(attributeName.trim(), current[key]);
+          }
+        });
+      });
+
+      document.querySelectorAll("#gallery img").forEach((image, index) => {
+        image.alt = formatText(current.photoAlt, index + 1);
+      });
+
+      if (!lightbox.hidden) {
+        setLightboxPhoto(currentPhotoIndex);
+      }
+
+      localStorage.setItem("preferredLanguage", currentLanguage);
+    };
+
     const photoNames = [
       "WhatsApp Image 2026-02-19 at 20.54.12 (1).jpeg",
       "WhatsApp Image 2026-02-19 at 20.54.12.jpeg",
@@ -212,7 +646,7 @@
       currentPhotoIndex = normalized;
       const imagePath = encodeURI(`fotos/${photoNames[normalized]}`);
       lightboxImage.src = imagePath;
-      lightboxImage.alt = `Foto del campo ${normalized + 1}`;
+      lightboxImage.alt = formatText(getText("photoAlt"), normalized + 1);
     };
 
     const openLightbox = (index) => {
@@ -236,7 +670,7 @@
       const image = document.createElement("img");
       const imagePath = encodeURI(`fotos/${name}`);
       image.src = imagePath;
-      image.alt = `Foto del campo ${index + 1}`;
+      image.alt = formatText(getText("photoAlt"), index + 1);
       image.loading = index < 12 ? "eager" : "lazy";
       image.fetchPriority = index < 4 ? "high" : "auto";
       image.decoding = "async";
@@ -244,6 +678,13 @@
 
       figure.appendChild(image);
       gallery.appendChild(figure);
+    });
+
+    languageSelect.value = initialLanguage;
+    applyLanguage(initialLanguage);
+
+    languageSelect.addEventListener("change", (event) => {
+      applyLanguage(event.target.value);
     });
 
     lightboxClose.addEventListener("click", closeLightbox);
